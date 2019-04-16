@@ -70,10 +70,38 @@ ul,ol{ list-style:none;}
 <script src="https://unpkg.com/@neos21/in-browser-sass@1.0.2/in-browser-sass.min.js"></script>
 </head>
 <body>
-<dl class="js-toggle">
-	<dt>トグル</dt>
-	<dd>中身はダミー中身はダミー中身はダミー中身はダミー中身はダミー中身はダミー</dd>
-</dl>
+<div class="all_area">
+      <ul class="tab_area">
+        <li id="tab1" class="select">Tab1</li>
+        <li id="tab2">Tab2</li>
+        <li id="tab3">Tab3</li>
+      </ul>
+    <!--  tab1 start -->
+
+<div class="content_box">
+	<div class="content_area">
+	 <ul class="list_area">
+	   <li>これはTab1の内容です</li>
+	   <li>これはTab1の内容です</li>
+	   <li>これはTab1の内容です</li>
+	   <li>これはTab1の内容です</li>
+	 </ul>
+	<!--  /tab1 end -->
+	</div>
+	   <!--  tab2 start -->
+	<div class="content_area hide">
+	 <p>これはTab2の内容です。これはTab2の内容です。これはTab2の内容です。これはTab2の内容です。これはTab2の内容です。これはTab2の内容です。</p>
+	   <!--  /tab2 end -->
+	</div>
+	<!--  tab3 start -->
+	<div class="content_area hide">
+	 <p>これはTab3の内容です<br>
+	</p>
+	   <!--  /tab3 end -->
+	</div>
+	   <!-- /tab area end -->
+	</div>
+</div>
 
 </body>
 <script>

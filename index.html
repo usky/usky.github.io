@@ -2,146 +2,127 @@
 <html lang="ja">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <meta charset="UTF-8">  
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
-<style type="text/less">
-@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-:root{
-  --gray:#ccc;
-  --l-gray: #efefef;
-  --d-gray:#999;
-  --black:#333;
-  --head: #69d998;
-  --headline:#5bc0cd;
-  --flag:#3850d0;
-  --pc:#0e78b5;
-  --sp:#ff6c8a;
-}
-
-*{ margin: 0; padding: 0; }
-html{ font-size: 62.5%;}
-body{ font-size: 1.6rem;font-family: 'Noto Sans Japanese', serif;}
-a{ text-decoration: none; color: var(--black); }
-
-header{ color: #fff; text-align: center; background: var(--head); padding: 8px 12px;
-  h1{color:#fff;}
-  
-}
-
-h3{ font-size: 18px ;margin-top: 16px; color:#fff; background: var(--headline); padding:8px; line-height:1;}
-
-.btn{ display: inline-block;margin: 16px; padding: 8px 16px; border:1px solid #fff;  border-radius: 4px;color: #fff; }
-
-.caution{ position: relative;
-  &::before{
-    position: absolute;
-    content: '';
-   top: -10px;
-    left: 0;
-    border-top: 0px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 1800px solid var(--head);
-    z-index: -1;
-  }
-  ul{list-style:none;padding:.8rem 2rem;}
- }
-
-.font( @face ){
-    &::before{
-      content:@face;
-      font-family:'fontawesome';
-      display:inline-block;
-      margin-right:8px;
-    }
-  }
-
-
-main{ width: 100%;
-      h2{ font-size: 32px ; padding:0 1.2rem;}
-      .box div {border-bottom: 1px dotted var(--gray);}
-}
-
-.primary_wire {
-      h2{ .font('\f10b');}
-      h3{ background: var(--sp);.font('\f10b');}
-}
-
-.secondary_wire {margin-top: 24px;
-   h2, h3{ .font('\f108');}
-}
-
-.list{
-   a{ position:relative; display:block; color: #ccc; pointer-events: none;padding:.8rem .2rem .8rem 1.2rem;}
-
-      &.flag a{ color: #2b5009; pointer-events:auto; transition:.1s; background:var(--flag);
-            &:hover{ transition:.1s; color:#333; background:#fff;
-                    &::after{transition:.1s;right:-4px;}
-                    }
-            &::after{position:absolute;top:30%;right:0;content:'\f105';font-family:'fontawesome';display:inline-block;margin-right:8px;transition:.1s;}
-          }
-
-      &.del a {color:#ccc; pointer-events: none; text-decoration: line-through;} 
-    
-      &.on a{color: #333; pointer-events:auto; transition:.1s;
-            &:hover{ transition:.1s; color:#fff; background:var(--flag);
-                    &::after{transition:.1s;right:-4px;}
-                    }
-            &::after{position:absolute;top:30%;right:0;content:'\f105';font-family:'fontawesome';display:inline-block;margin-right:8px;transition:.1s;}
-            }
-}
-
-    #pc-list .sd,#sd-list .pc{ display:none;}
-    #pc-list .o-sd,#sd-list .o-pc{ color: #ccc; pointer-events: none;}
-
-
-@media only screen and (min-width: 640px) {
-main{ display: flex; flex-direction:row-reverse;}
-main > div{width: 50%;}
-.secondary_wire{margin-top: 0;}
-#pc-list {border-right: 1px solid #eee;}
-}
-
-</style>
-<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+<link rel="stylesheet/less" type="text/css" href="./asset/css/style.less">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
 </head>
 <body>
-   <header>
-      <h1>ページリスト</h1>
-      <p id="ver"></p>
-      <a class="btn" href="/readme.html">READMEへ</a>
-    </header>
-    <div class="caution">
-      <ul>
-        <li></li>
-      </ul>
+<!-- <header>
+header
+</header>
+ -->
+ <main>
+<section class="m-hero__area">
+  <div class="m-hero__header" data-delighter >
+    <h1 class="m-hero__heading">Portfolio</h1>
+    <p class="m-hero__lead">- Abridged Edition -</p>
+  </div>
+</section>
+<section class="m-section__area is-fullsize">
+<div class="m-section__pre">
+  <div class="m-heading is-full">
+    <h2 class="m-heading_title" data-delighter>Profile</h2>
+  </div>
+</div>
+  <div class="m-profile__area m-section__sec">
+    <div class="m-profile__box fade" data-delighter>
+      <picture class="m-profile__image">
+        <source srcset="http://placehold.it/640x640"
+            media="(min-width: 800px)">
+        <img src="http://placehold.it/640x640" />
+      </picture>
+      <div class="m-profile__list">
+        <p class="m-profile__name">usk</p>
+        <ul class="m-profile__profession">
+          <li class="m-profile__pro_list">WEB Designer</li>
+          <li class="m-profile__pro_list">Front End Engineer</li>
+          <li class="m-profile__pro_list">Designer</li>
+        </ul>
+        
+      </div>
+      
     </div>
-
-
-
-<main>
-  <div class="primary_wire">
-      <h2>SD</h2>
-      <div id="sd-list" class="box"></div>
+    
   </div>
-  <div class="secondary_wire">
-     <h2>PC</h2>
-     <div id="pc-list" class="box"></div>
+</section>
+<section class="m-section__area">
+  <div class="m-heading">
+    <h2 class="m-heading_title" data-delighter>Skill</h2>
   </div>
+  <div class="m-free__area fade" data-delighter>
+  <ul class="m-skill_list">
+    <li class="m-skill_list_item ps">Ps</li>
+    <li class="m-skill_list_item ai">Ai</li>
+    <li class="m-skill_list_item xd">Xd</li>
+  </ul>
+    
+  </div>
+</section>
+<section class="m-section__area">
+  
+  <div class="m-free__area">
+  <div class="m-heading__small">
+    <h2 class="m-heading_title" data-delighter>Skill</h2>
+  </div>
+  <div class="m-meter__area">
+    <ul class="m-meter__setlist">
+      <li data-delighter class="m-meter__item m-100"><span>HTML 5</span></li>
+      <li data-delighter class="m-meter__item m-100"><span>CSS</span></li>
+      <li data-delighter class="m-meter__item m-100"><span>Sass</span></li>
+      <li data-delighter class="m-meter__item m-75"><span>Less</span></li>
+      <li data-delighter class="m-meter__item m-50"><span>Javascript</span></li>
+      <li data-delighter class="m-meter__item m-75"><span>gulp</span></li>
+    </ul>
+  </div>
+    
+  </div>
+
+</section>
+<section class="m-section__area">
+  <div class="m-heading">
+    <h2 class="m-heading_title" data-delighter>Skill</h2>
+  </div>
+  <div class="m-free__area fade" data-delighter>
+  <ul class="m-skill_list">
+    <li class="m-skill_list_item ps">Ps</li>
+    <li class="m-skill_list_item ai">Ai</li>
+    <li class="m-skill_list_item xd">Xd</li>
+  </ul>
+    
+  </div>
+</section>
+
 </main>
+<aside>
+  aside
+</aside>
+<footer>
+  footerZ
+</footer>
   </body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="./asset/js/delighters.min.js"></script>
+<script src="./asset/js/scroll-out.min.js"></script>
+
 <script>
-  $(function(){
-  $('a[href^="#"]').click(function(){
-    var speed = 500;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top-40;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
-    return false;
-  });
-});
-</script></html>
+
+    options = {
+    attribute:  'data-delighter',
+    classNames: ['delighter', 'started', 'ended'],
+    start:      0, // default start threshold
+    end:        0, // default end threshold
+    autoInit:   true  // initialize when DOMContentLoaded
+  }
+// jQuery(function(){
+//   $('a[href^="#"]').click(function(){
+//     var speed = 500;
+//     var href= $(this).attr("href");
+//     var target = $(href == "#" || href == "" ? 'html' : href);
+//     var position = target.offset().top-40;
+//     $("html, body").animate({scrollTop:position}, speed, "swing");
+//     return false;
+//   });
+// });
+</script>
+</html>

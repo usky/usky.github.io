@@ -1,0 +1,32 @@
+<body oninput="i.srcdoc=h.value+'<style>'+c.value+'</style>'">
+    <style>
+    textarea,
+    iframe {
+        width: 50%;
+        max-width: 680px;
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    div{
+        display: flex;
+    }
+    textarea {
+        width: 25%;
+        height: 100%;
+        font-size: 12;
+        background: #222;
+        color: #fff;
+    }
+    </style>
+    
+    <div>
+        <textarea placeholder=HTML id=h></textarea>
+        <textarea placeholder=CSS id=c>/*PCの場合*/
+@import url("https://www.walkerplus.com/asset/css/style-pc.css");
+        </textarea>
+    <iframe id=i>
+            </div>
